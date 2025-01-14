@@ -101,21 +101,20 @@ align-content: center;
 .play {
   width: 4vw;
   height: 2vw;
-  min-height: 50px;
-  min-width: 50px;
+  min-width: 40px;
+  min-height: 20px;
   }
   .pause {
   width: 4vw;
   height: 2vw;
-  min-height: 50px;
-  min-width: 50px;
+  min-width: 40px;
+  min-height: 20px;
   }
 .skip {
   width: 4vw;
   height: 2vw;
-  min-height: 50px;
-  min-width: 50px;
-  
+  min-width: 40px;
+  min-height: 20px;
   }
 
 
