@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const TARGET_AUDIO_COUNT = 20;    // Target number of audio files in the list
     const REFILL_THRESHOLD = 10;      // Threshold to trigger a refill
     const FETCH_LIMIT = 300;           // Number of files to fetch per request
-    const PLAY_DELAY = 1000;          // Delay between tracks in milliseconds
+    const PLAY_DELAY = 500;          // Delay between tracks in milliseconds
 
     let audioUrls = [];
     let currentTrack = 0;
@@ -145,4 +145,25 @@ document.addEventListener("DOMContentLoaded", async () => {
     // Initialize and start playing
     await maintainAudioList();  // Fill up the list initially
     playCurrentTrack();         // Start playback
+
+    $(function() {
+  $(".btn").click(function(e) {
+    if ($(this).hasClass("play")) {
+      $(this).toggleClass("play pause").html("&#9208;");
+      // Trigger Play event
+      audioPlayer.play()
+    } else {
+      $(this).toggleClass("play pause").html("&#9205;");
+      // Trigger Pause Event
+      audioPlayer.pause()
+    }
+  });
+});
+
+
+  $(function() {
+  $(".btn1").click(function(e) {
+      audioPlayer.onended()
+})
+});  
 });

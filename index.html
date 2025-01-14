@@ -8,17 +8,24 @@
 </head>
 <body>
 
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <div class="card">
+        <button class="btn play">&#9205;</button>
+        <button class="btn1 skip">&#9197;</button>
+    </div>
+
     <!-- Display area for the random image -->
     <div id="imageDisplay">
         <img id="randomImage" alt="Loading...">
     </div>
 
     <!-- Audio player control -->
-    <audio id="audioPlayer" controls></audio>
+    <audio id="audioPlayer"></audio>
 
-    <!-- Queue display for upcoming audio tracks -->
+    <!-- Queue display for upcoming audio tracks-->
     <div id="audioQueue">
-        <h3>Upcoming</h3>
+        
         <ul id="queueList"></ul>
     </div>
 

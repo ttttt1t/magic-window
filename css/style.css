@@ -91,10 +91,29 @@ textarea {
 
 #imageDisplay img {
     width: auto;
-    height: 40vh;
+    height: 100vh;
     min-height: 300px;
 }
+.card {
+position: absolute;
+align-content: center;
+}
+.play {
+  width: 5vw;
+  height: 5vw;
+  }
+  .pause {
+  width: 5vw;
+  height: 5vw;
+  }
+.skip {
+  width: 5vw;
+  height: 5vw;
 
+  }
+
+
+  /*
 #audioQueue {
    align-self: left;
     margin-top: 20px;
@@ -110,16 +129,20 @@ textarea {
     font-weight: bold;
     color: blue;
 }
+*/
 #audioPlayer {
 
    align: left;
    margin-left: 15vw;
+   height: 0vh;
 }
+
 ul {
-  display: block;
+  display: none;
+  /*
   list-style-type: none;
   text-align: left;
-  margin-left: -10vw;
+  margin-left: -10vw; */
 
 
 }
