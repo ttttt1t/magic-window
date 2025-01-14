@@ -149,11 +149,11 @@ document.addEventListener("DOMContentLoaded", async () => {
     $(function() {
   $(".btn").click(function(e) {
     if ($(this).hasClass("play")) {
-      $(this).toggleClass("play pause").html("&#9208;");
+      $(this).toggleClass("play pause").html("&#9199;");
       // Trigger Play event
       audioPlayer.play()
     } else {
-      $(this).toggleClass("play pause").html("&#9205;");
+      $(this).toggleClass("play pause").html("&#9199;");
       // Trigger Pause Event
       audioPlayer.pause()
     }
