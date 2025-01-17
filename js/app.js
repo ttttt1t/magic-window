@@ -1,8 +1,10 @@
+//most of this is chatgpt
+
 document.addEventListener("DOMContentLoaded", async () => {
-    const TARGET_AUDIO_COUNT = 20;    // Target number of audio files in the list
-    const REFILL_THRESHOLD = 10;      // Threshold to trigger a refill
+    const TARGET_AUDIO_COUNT = 10;    // Target number of audio files in the list
+    const REFILL_THRESHOLD = 5;      // Threshold to trigger a refill
     const FETCH_LIMIT = 300;           // Number of files to fetch per request
-    const PLAY_DELAY = 500;          // Delay between tracks in milliseconds
+    const PLAY_DELAY = 300;          // Delay between tracks in milliseconds
 
     let audioUrls = [];
     let currentTrack = 0;
@@ -144,7 +146,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // Initialize and start playing
     await maintainAudioList();  // Fill up the list initially
-    playCurrentTrack();         // Start playback
+    playCurrentTrack();         // Start playback    //if i remove this it stops working
 
     $(function() {
   $(".btn").click(function(e) {

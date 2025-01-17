@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wikimedia playlist</title>
+    <title>Magic Window</title>
     <link rel="stylesheet" href="css/style.css"> <!-- Link to external CSS file -->
 </head>
 <body>
@@ -15,18 +15,18 @@
         <button class="btn1 skip">&#9197;</button>
     </div>
 
-    <!-- Display area for the random image -->
     <div id="imageDisplay">
         <img id="randomImage" alt="Preloading media...">
     </div>
 
-    <!-- Audio player control -->
+
     <audio id="audioPlayer"></audio>
 
-    <!-- Queue display for upcoming audio tracks-->
+
     <div id="audioQueue">
-        
-        <ul id="queueList"></ul>
+
+        <a class="linkin" href="https://commons.wikimedia.org/wiki/File:Pioneer10-plaque.jpg">https://commons.wikimedia.org/wiki/File:Pioneer10-plaque.jpg<a>
+        <ul  id="queueList"></ul>    <!-- i dont know why it breaks if i remove this-->
     </div>
 
     <!-- Link to the external JavaScript file -->

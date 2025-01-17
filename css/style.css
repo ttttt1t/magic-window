@@ -83,15 +83,15 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* Center the image display and style the queue */
+
 #imageDisplay {
     text-align: center;
-    margin-bottom: 5vh;
+  /*  margin-bottom: 5vh; */
 }
 
 #imageDisplay img {
     width: auto;
-    height: 100vh;
+    height: 98vh;
     min-height: 300px;
 }
 .card {
@@ -118,6 +118,10 @@ align-content: center;
   }
 
 
+#audioQueue {
+      position:absolute;
+   bottom:0;
+ }
   /*
 #audioQueue {
    align-self: left;
@@ -138,8 +142,6 @@ align-content: center;
 #audioPlayer {
 
    align: left;
-   margin-left: 15vw;
-   height: 0vh;
 }
 
 ul {
@@ -149,8 +151,8 @@ ul {
   text-align: left;
   margin-left: -10vw; */
 
-
 }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
